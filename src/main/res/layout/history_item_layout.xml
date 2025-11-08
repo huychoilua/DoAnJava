@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Sử dụng LinearLayout nằm ngang làm gốc cho mỗi hàng -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="12dp"
+    android:paddingBottom="12dp"
+    android:paddingStart="8dp"
+    android:paddingEnd="8dp"
+    android:gravity="center_vertical"
+    android:background="?android:attr/selectableItemBackground">
+
+    <!-- Cột 1: Ngày -->
+    <TextView
+        android:id="@+id/tvDetectionDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:text="08-11-2025 10:30"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray" />
+
+    <!-- Cột 2: Mã số -->
+    <TextView
+        android:id="@+id/tvPersonId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:text="22200073"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:textColor="@android:color/black" />
+
+    <!-- Cột 3: Tên -->
+    <TextView
+        android:id="@+id/tvPersonName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3.5"
+        android:text="Nguyễn Văn A"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="?attr/colorPrimary" />
+
+</LinearLayout>
